@@ -1,0 +1,32 @@
+.a-button {
+    padding: .6rem 1rem;
+    border-radius: 1rem;
+    font-size: 15px;
+    transition: all .5s ease;
+    cursor: pointer;
+
+    &:not(span):hover {
+        background-color: $color-dark-primary;
+    }
+
+    &[disabled] {
+        cursor: not-allowed;
+        opacity: 0.5;
+        pointer-events: none;
+    }
+}
+
+.pagination {
+    margin: 4rem 0;
+    .a-button {
+        text-transform: uppercase;
+        border-radius: 0;
+        font-size: 14px;
+        border: 1px solid $color-dark-primary;
+
+        &:not(span):hover {
+            background-color: $color-dark-primary;
+            color: $color-background;
+        }
+    }
+}
